@@ -1,0 +1,323 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Dinner and Christmas Play</title>
+        <link rel="icon" href="https://i.pinimg.com/originals/cc/7b/8b/cc7b8b6133c154f09ac0c014bbe9371a.png">
+
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=Charmonman">
+
+        <style>
+
+            body {
+                margin: 0;
+            }
+
+
+            #pagedivider {
+                display: flex;
+                background: #E5E5E5;
+            }
+
+
+            .sectionleft {
+                width: 54vw;
+            }
+
+            #bubble {
+                background-color: #0E2123;
+                top: -10vw;
+                left: -6vw;
+                width: 40vw;
+                height: 40vw;
+                border-radius: 50%;
+                /*box-shadow: 0.3vw .8vw 6vw #5a4e4e;*/
+                position: absolute;
+                z-index: 1;
+            }
+
+            #invite {
+                color: white;
+                font-size: 4.5vw;
+                font-family: Charmonman, cursive;
+                top: 19vw;
+                text-align: center;
+                left: 7vw;
+                font-style: italic;
+                position: absolute;
+            }
+
+
+            #stamp {
+
+                z-index: 1;
+                width: 11vw;
+                transform: rotate(-37deg);
+                top: 3vh;
+                left: 28vw;
+                position:absolute;
+            }
+
+            #maincontainer {
+                width: 100vw;
+                height: 17vw;
+            }
+
+            #header {
+                text-align:center;
+                margin: 5vh 3vw 0vh 0vw;
+
+            }
+
+            h2 {
+                font-family: Charmonman, cursive;
+                font-size: 4vw;
+                color: #B91522;
+                font-weight: 900;
+            }
+
+            h3 {
+                font-size: 1.5vw;
+                color: #0E2123;
+                font-family: oswald;
+                font-weight: 100;
+                font-style: italic;
+            }
+
+            #title {
+                margin-bottom: 0;
+            }
+
+            #subtitle {
+                margin-top: 0;
+            }
+
+            #details {
+                background-image: url("https://images.pexels.com/photos/730256/pexels-photo-730256.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+                margin: 0;
+                width: 100vw;
+                height: 141vh;
+                background-size: cover;
+                background-position: bottom;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #detailsflexbox {
+                display: flex;
+                background-color: rgba(18,17,16,.8);
+                width: 92vw;
+                /*height: 78vh;*/
+                border-radius: 21px;
+                box-shadow: 0 0 5vw black;
+                justify-content: space-around;
+            }
+
+            #show {
+                width: 30vw;
+            }
+
+            #restaurant {
+                width: 28vw;
+            }
+
+            #theinn {
+                height: 24vw;
+                margin-top: 2vh;
+                margin-left: 5vw;
+            }
+
+            #factory {
+                width: 27vw;
+                margin-top: 7vh;
+                box-shadow: 0 0 5vw black;
+                border-radius: 56%;
+            }
+
+            .detailSubHeaders {
+
+                font-family: Oswald;
+                font-style: italic;
+                color: white;
+                text-align: center;
+                font-size: 1.3vw;
+                font-weight: 100;
+            }
+
+            .detailparagraphs {
+                font-family: Oswald;
+                color: white;
+                text-align: center;
+                font-size: 1vw;
+                font-weight: 100;
+                margin-bottom: 2vw;
+            }
+
+
+            /* unvisited link */
+            a:link {
+                color: white;
+            }
+
+            /* visited link */
+            a:visited {
+                color: #9B9B9B;
+            }
+
+            /* mouse over link */
+            a:hover {
+                color: blue;
+            }
+
+            /* selected link */
+            a:active {
+                color: hotpink;
+            }
+
+
+            #tickets {
+                position: fixed;
+                padding: 10px;
+                top: 45vh;
+                right: 0;
+                background: #57E7D7;
+                border-radius: 7px;
+                transform: rotate(-90deg);
+                margin-right: -50px;
+                border: solid 4px white;
+                font-family: Oswald;
+                font-weight: 100;
+                padding-top: 8px;
+                padding-bottom: 10px;
+                font-size: 1.2em;
+            }
+
+            #rsvp {
+                position: fixed;
+                padding: 10px;
+                top: 59vh;
+                right: 0;
+                background: #57E7D7;
+                border-radius: 7px;
+                transform: rotate(-90deg);
+                margin-right: -13px;
+                border: solid 4px white;
+                font-family: Oswald;
+                font-weight: 100;
+                padding-top: 8px;
+                padding-bottom: 10px;
+                font-size: 1.2em;
+            }
+
+
+        </style>
+
+    </head>
+
+
+
+    <body>
+        <!--Invitation Bubble-->
+        <div id="pagedivider">
+
+            <div class="sectionleft">
+                <p>Hope you can make it!</p>
+
+
+                <div id="bubble">
+                    <h1 id="invite">You're Invited!</h1>
+
+                </div>
+
+
+                <!--Stamp-->
+
+                <img id="stamp" src="https://i.pinimg.com/originals/cc/7b/8b/cc7b8b6133c154f09ac0c014bbe9371a.png">
+
+            </div>
+
+
+
+
+
+
+            <!--Invitation Header-->
+
+            <div id="maincontainer">
+
+                <div id="header">
+                    <h2 id="title">Dinner and Christmas Play</h2>
+                    <h3 id="subtitle">Saturday, December 8th at 4:45 PM ~ Play to begin at 7:00 PM</h3>
+                </div>
+
+            </div>
+        </div>
+
+        <!--Buy Tickets and CTA-->
+
+        <div id="tickets">
+
+            Purchase Tickets
+
+
+        </div>
+
+
+        <div id="rsvp">
+
+            RSVP
+
+        </div>
+
+
+
+        <!--Invitation Details-->
+        <div id="details">
+            <!-- <img id="backgroundimage" src="https://images.pexels.com/photos/730256/pexels-photo-730256.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" > -->
+
+            <div id="detailsflexbox">
+
+                <div id="restaurant">
+
+                    <img id="factory" src="https://lh3.ggpht.com/p/AF1QipN_p8wOOmmV0Vlk0FHWft5K4L83kDz6X4kxEw4b=s1536">
+                    <br>
+                    <div>
+                        <h4 class="detailSubHeaders">Dinner at the Spaghetti Factory ~ 4:45 PM <br> 9145 Sheridan Boulevard, Westminster, CO 80031</h4>
+                        <p class="detailparagraphs">
+                            We'll begin the evening with a lovely, yet affordable, dinner at the Old Spaghetti Factory.
+                            You can check out their menu at <a href="https://www.osf.com/pdf/menus/Westminster.pdf">theSpaghettiFactory.com</a>
+                        </p>
+
+                    </div>
+                </div>
+
+                <div id="show">
+                    <img id="theinn" src="https://isitephotos.com/wp-content/uploads/2018/07/inn-logo-online-colors.png">
+
+                    <div>
+                        <h4 class="detailSubHeaders">
+                            "The Inn" by CaryAnn Productions ~ 7:00 PM <br> Skyview Academy Auditorium <br>
+                            8990 York Street, Thorton, CO 80229
+                        </h4>
+
+                        <p class="detailparagraphs">
+                            At around 6:30, we'll take an about 15 minute drive over to the Skyview Auditorium,
+                            where we'll enjoy an exciting and comical play produced by CaryAnn Productions and starring
+                            several of the Allen children, whom many of you know, as well as many other Christian youth from the Denver area.
+                            I had the pleasure of attending this show once before on a previous year, and I was very impressed.
+                            If you'd like to find out more or purchase tickets, head over to <a href="http://caryann.org/index.html">CaryAnn.org</a>
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </body>
+</html>
