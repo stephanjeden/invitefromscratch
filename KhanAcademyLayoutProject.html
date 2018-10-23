@@ -6,8 +6,8 @@
         <link rel="icon" href="https://i.pinimg.com/originals/cc/7b/8b/cc7b8b6133c154f09ac0c014bbe9371a.png">
 
         <link rel="stylesheet"
-              href="https://fonts.googleapis.com/css?family=Charmonman">
-
+              href="https://fonts.googleapis.com/css?family=Dancing+Script">
+              
         <style>
 
             body {
@@ -26,7 +26,7 @@
             }
 
             #bubble {
-                background-color: #0E2123;
+                background-color: rgb(18, 18, 18);
                 top: -10vw;
                 left: -6vw;
                 width: 40vw;
@@ -40,10 +40,10 @@
             #invite {
                 color: white;
                 font-size: 4.5vw;
-                font-family: Charmonman, cursive;
-                top: 19vw;
+                font-family: 'Dancing Script', cursive;
+                top: 21vw;
                 text-align: center;
-                left: 7vw;
+                left: 9.5vw;
                 font-style: italic;
                 position: absolute;
             }
@@ -66,12 +66,12 @@
 
             #header {
                 text-align:center;
-                margin: 5vh 3vw 0vh 0vw;
+                margin: 6vh 3vw 0vh 0vw;
 
             }
 
             h2 {
-                font-family: Charmonman, cursive;
+                font-family: 'Dancing Script', cursive;
                 font-size: 4vw;
                 color: #B91522;
                 font-weight: 900;
@@ -87,6 +87,16 @@
 
             #title {
                 margin-bottom: 0;
+                margin-top: 0;
+            }
+
+            #starringallens {
+                margin-bottom: 4vh;
+                margin-top: 0.5vh;
+                color:#B91522;
+                font-family: 'Dancing Script', cursive;
+                font-size: 2vw;
+                
             }
 
             #subtitle {
@@ -107,10 +117,9 @@
 
             #detailsflexbox {
                 display: flex;
-                background-color: rgba(18,17,16,.8);
-                width: 92vw;
+                background-color: rgba(0,0,0,.8);
+                width: 100vw;
                 /*height: 78vh;*/
-                border-radius: 21px;
                 box-shadow: 0 0 5vw black;
                 justify-content: space-around;
             }
@@ -161,14 +170,16 @@
                 color: white;
             }
 
+            
+
             /* visited link */
             a:visited {
-                color: #9B9B9B;
+                color: rgb(151, 151, 151);
             }
 
             /* mouse over link */
             a:hover {
-                color: blue;
+                color: rgb(37, 130, 0);
             }
 
             /* selected link */
@@ -182,11 +193,11 @@
                 padding: 10px;
                 top: 45vh;
                 right: 0;
-                background: #57E7D7;
-                border-radius: 7px;
+                background:#B91522;
+                border-radius: 6px;
                 transform: rotate(-90deg);
                 margin-right: -50px;
-                border: solid 4px white;
+                border: solid 3px white;
                 font-family: Oswald;
                 font-weight: 100;
                 padding-top: 8px;
@@ -199,11 +210,11 @@
                 padding: 10px;
                 top: 59vh;
                 right: 0;
-                background: #57E7D7;
+                background:#B91522;
                 border-radius: 7px;
                 transform: rotate(-90deg);
                 margin-right: -13px;
-                border: solid 4px white;
+                border: solid 3px white;
                 font-family: Oswald;
                 font-weight: 100;
                 padding-top: 8px;
@@ -219,7 +230,7 @@
 
 
     <body>
-        <!--Invitation Bubble-->
+        <!--Invitation Bubble and Header-->
         <div id="pagedivider">
 
             <div class="sectionleft">
@@ -249,27 +260,31 @@
 
                 <div id="header">
                     <h2 id="title">Dinner and Christmas Play</h2>
+                    <h3 id="starringallens">Starring the Allens</h3>
                     <h3 id="subtitle">Saturday, December 8th at 4:45 PM ~ Play to begin at 7:00 PM</h3>
                 </div>
 
             </div>
         </div>
 
-        <!--Buy Tickets and CTA-->
+        <!--Buy Tickets and RSVP-->
 
-        <div id="tickets">
+        <a target="_blank" href="http://www.caryann.org"> <div id="tickets">
 
-           <a target="_blank" href="http://www.caryann.org/">Purchase Tickets</a> 
+           Purchase Tickets
 
 
         </div>
+    </a>
 
 
+    <a target="_blank" href="mailto:stephanjeden@gmail.com">
         <div id="rsvp">
 
             RSVP
 
         </div>
+    </a>
 
 
 
